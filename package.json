@@ -1,0 +1,35 @@
+{
+  "name": "SkateNote",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --mode development --watch ./skatenote/frontend/src/index.js -o ./skatenote/frontend/static/frontend",
+    "build": "webpack --mode production ./skatenote/frontend/src/index.js -o ./skatenote/frontend/static/frontend"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeanZheng21/SkateNote.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeanZheng21/SkateNote/issues"
+  },
+  "homepage": "https://github.com/SeanZheng21/SkateNote#readme",
+  "devDependencies": {
+    "@babel/core": "^7.13.16",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "webpack": "^5.35.0",
+    "webpack-cli": "^4.6.0"
+  },
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}

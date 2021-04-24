@@ -39,7 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'trick',
     'rest_framework',
-    'frontend'
+    'frontend',
+    'practice'
 ]
 
 MIDDLEWARE = [

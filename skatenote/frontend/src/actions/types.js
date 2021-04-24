@@ -1,0 +1,1 @@
+export const GET_PRACTICE = "GET_PRACTICE";

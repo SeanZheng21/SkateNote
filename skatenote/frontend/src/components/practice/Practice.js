@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { getPractice } from '../../actions/practice';
+import { getPractice, deletePractice } from '../../actions/practice';
 
 export class Practice extends Component {
     static propTypes = {
@@ -30,7 +30,7 @@ export class Practice extends Component {
                                 <td>{p.id}</td>
                                 <td>{p.isCompleted ? "True" : "false"}</td>
                                 <td>
-                                    <button className="btn btn-danger btn-sm">Delete</button>
+                                    <button onClick={this.props.deletePractice.bind(this, p.id)} className="btn btn-danger btn-sm">Delete</button>
                                 </td>
                             </tr>
                         ))}
@@ -45,4 +45,7 @@ const mapStateToProps = state => ({
     practice: state.practice.practice
 });
 
-export default connect(mapStateToProps, { getPractice })(Practice);
+export default connect(
+    mapStateToProps,
+    { getPractice, deletePractice }
+)(Practice);

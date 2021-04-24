@@ -1,4 +1,4 @@
-import { GET_PRACTICE } from '../actions/types.js';
+import { GET_PRACTICE, DELETE_PRACTICE } from '../actions/types.js';
 
 const initialState = {
     practice: []
@@ -11,7 +11,11 @@ export default function (state = initialState, action) {
                 ...state,
                 practice: action.payload
             }
-
+        case DELETE_PRACTICE:
+            return {
+                ...state,
+                practice: state.practice.filter(p => p.id !== action.payload)
+            }
         default:
             return state;
     }

@@ -1,6 +1,7 @@
 import axios from 'axios';
 
-import { GET_PRACTICE, DELETE_PRACTICE, ADD_PRACTICE } from './types';
+import { createMessage } from './messages';
+import { GET_PRACTICE, DELETE_PRACTICE, ADD_PRACTICE, GET_ERRORS } from './types';
 
 // GET PRACTICE
 export const getPractice = () => dispatch => {
@@ -24,6 +25,7 @@ export const deletePractice = (id) => dispatch => {
             });
         })
         .catch(err => console.log(err));
+
 }
 
 // ADD PRACTICE
@@ -36,4 +38,14 @@ export const addPractice = (practice) => dispatch => {
             });
         })
         .catch(err => console.log(err));
+    // .catch(err => {
+    //     const errors = {
+    //         msg: err.response.data,
+    //         status: err.response.status
+    //     }
+    //     dispatch({
+    //         type: GET_ERRORS,
+    //         payload: errors
+    //     });
+    // });
 }

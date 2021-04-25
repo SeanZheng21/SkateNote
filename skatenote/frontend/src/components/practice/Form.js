@@ -21,8 +21,10 @@ export class Form extends Component {
         e.preventDefault();
         const { isCompleted } = this.state;
         const practice = { isCompleted }
-        // console.log(practice);
         this.props.addPractice(practice);
+        this.setState({
+            isCompleted: false
+        });
     }
 
     render() {

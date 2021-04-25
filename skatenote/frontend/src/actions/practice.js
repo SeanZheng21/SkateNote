@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-import { createMessage } from './messages';
-import { GET_PRACTICE, DELETE_PRACTICE, ADD_PRACTICE, GET_ERRORS } from './types';
+import { createMessage, returnErrors } from './messages';
+import { GET_PRACTICE, DELETE_PRACTICE, ADD_PRACTICE } from './types';
 
 // GET PRACTICE
 export const getPractice = () => dispatch => {

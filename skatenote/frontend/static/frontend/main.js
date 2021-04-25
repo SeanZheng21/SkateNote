@@ -367,7 +367,7 @@ eval("\n\nvar bind = __webpack_require__(/*! ./helpers/bind */ \"./node_modules/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createMessage\": () => (/* binding */ createMessage)\n/* harmony export */ });\n/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./types */ \"./skatenote/frontend/src/actions/types.js\");\n // CREATE MESSAGE\n\nvar createMessage = function createMessage(msg) {\n  return {\n    type: _types__WEBPACK_IMPORTED_MODULE_0__.CREATE_MESSAGE,\n    payload: msg\n  };\n};\n\n//# sourceURL=webpack://SkateNote/./skatenote/frontend/src/actions/messages.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"createMessage\": () => (/* binding */ createMessage),\n/* harmony export */   \"returnErrors\": () => (/* binding */ returnErrors)\n/* harmony export */ });\n/* harmony import */ var _types__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./types */ \"./skatenote/frontend/src/actions/types.js\");\n // CREATE MESSAGE\n\nvar createMessage = function createMessage(msg) {\n  return {\n    type: _types__WEBPACK_IMPORTED_MODULE_0__.CREATE_MESSAGE,\n    payload: msg\n  };\n}; // RETURN ERRORS\n\nvar returnErrors = function returnErrors(msg, status) {\n  return {\n    type: _types__WEBPACK_IMPORTED_MODULE_0__.GET_ERRORS,\n    payload: {\n      msg: msg,\n      status: status\n    }\n  };\n};\n\n//# sourceURL=webpack://SkateNote/./skatenote/frontend/src/actions/messages.js?");
 
 /***/ }),
 

@@ -6,4 +6,4 @@ class PracticeSerializer(serializers.ModelSerializer):
     class Meta:
         model = Practice
         fields = "__all__"
-        depth = 1
+        # depth = 1

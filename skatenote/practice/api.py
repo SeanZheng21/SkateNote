@@ -4,6 +4,11 @@ from .serializers import PracticeSerializer
 
 # Practice viewset
 class PracticeViewSet(viewsets.ModelViewSet):
-    queryset = Practice.objects.all()
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.IsAuthenticated]
     serializer_class = PracticeSerializer
+
+    def get_queryset(self):
+        return self.request.user.practice.all()
+
+    def perform_create(self, serializer):
+        serializer.save(owner=self.request.user)

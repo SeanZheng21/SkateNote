@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-import { GET_PRACTICE, DELETE_PRACTICE } from './types';
+import { GET_PRACTICE, DELETE_PRACTICE, ADD_PRACTICE } from './types';
 
 // GET PRACTICE
 export const getPractice = () => dispatch => {
@@ -21,6 +21,18 @@ export const deletePractice = (id) => dispatch => {
             dispatch({
                 type: DELETE_PRACTICE,
                 payload: id
+            });
+        })
+        .catch(err => console.log(err));
+}
+
+// ADD PRACTICE
+export const addPractice = (practice) => dispatch => {
+    axios.post('/api/practice/', practice)
+        .then(res => {
+            dispatch({
+                type: ADD_PRACTICE,
+                payload: res.data
             });
         })
         .catch(err => console.log(err));

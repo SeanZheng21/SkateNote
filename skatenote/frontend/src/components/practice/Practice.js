@@ -5,7 +5,9 @@ import { getPractice, deletePractice } from '../../actions/practice';
 
 export class Practice extends Component {
     static propTypes = {
-        practice: PropTypes.array.isRequired
+        practice: PropTypes.array.isRequired,
+        getPractice: PropTypes.func.isRequired,
+        deletePractice: PropTypes.func.isRequired
     };
 
     componentDidMount() {

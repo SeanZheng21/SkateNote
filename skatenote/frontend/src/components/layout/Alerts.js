@@ -11,9 +11,24 @@ export class Alerts extends Component {
     }
 
     componentDidUpdate(prevProps) {
-        const { error, alert } = this.props;
+        const { error, alert, message } = this.props;
         if (error !== prevProps.error) {
-            alert.error('There is an error');
+            if (error.msg.message) {
+                alert.error(`Message: ${error.msg.message.join()}`);
+            }
+            if (error.msg.non_field_errors) {
+                alert.error(error.msg.non_field_errors.join());
+            }
+            if (error.msg.username) {
+                alert.error(error.msg.username.join());
+            }
+            // alert.error('There is an error');
+        }
+
+        if (message !== prevProps.message) {
+            if (message.deletePractice) alert.success(message.deletePractice);
+            if (message.addPractice) alert.success(message.addPractice);
+            if (message.passwordNotMatch) alert.error(message.passwordNotMatch);
         }
     }
 

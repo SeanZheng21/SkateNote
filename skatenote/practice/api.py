@@ -5,6 +5,7 @@ from .serializers import PracticeSerializer
 # Practice viewset
 class PracticeViewSet(viewsets.ModelViewSet):
     permission_classes = [permissions.IsAuthenticated]
+    # permission_classes = [permissions.AllowAny]
     serializer_class = PracticeSerializer
 
     def get_queryset(self):

@@ -1,3 +1,5 @@
+export const GET_TRICK = "GET_TRICK";
+export const GET_TRICK_ONE = "GET_TRICK_ONE";
 export const GET_PRACTICE = "GET_PRACTICE";
 export const DELETE_PRACTICE = "DELETE_PRACTICE";
 export const ADD_PRACTICE = "ADD_PRACTICE";

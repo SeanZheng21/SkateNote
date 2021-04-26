@@ -40,6 +40,25 @@ export class Header extends Component {
             </ul>
         );
 
+        const authPages = (
+            <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li className="nav-item">
+                    <Link to="/trick" className="nav-link">All Tricks</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/practice" className="nav-link">My Practices</Link>
+                </li>
+            </ul>
+        );
+
+        const guestPages = (
+            <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li className="nav-item">
+                    <Link to="/trick" className="nav-link">All Tricks</Link>
+                </li>
+            </ul>
+        );
+
         return (
             <nav className="navbar navbar-expand-sm navbar-light bg-light">
                 <div className="container">
@@ -48,6 +67,7 @@ export class Header extends Component {
                     </button>
                     <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
                         <a className="navbar-brand" href="#">Skate Note</a>
+                        {isAuthenticated ? authPages : guestPages}
                     </div>
                     {isAuthenticated ? authLinks : guestLinks}
                 </div>

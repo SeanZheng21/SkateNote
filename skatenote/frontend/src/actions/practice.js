@@ -1,7 +1,10 @@
 import axios from 'axios';
 
-import { createMessage, returnErrors } from './messages';
-import { GET_PRACTICE, DELETE_PRACTICE, ADD_PRACTICE, GET_ERRORS } from './types';
+import { createMessage } from './messages';
+import {
+    GET_PRACTICE, DELETE_PRACTICE, ADD_PRACTICE,
+    GET_ERRORS, GET_TRICK
+} from './types';
 import { tokenConfig } from './auth';
 
 
@@ -14,7 +17,17 @@ export const getPractice = () => (dispatch, getState) => {
                 payload: res.data
             });
         })
-        .catch(err => console.log(err));
+        // .catch(err => console.log(err));
+        .catch(err => {
+            const errors = {
+                msg: err.response.data,
+                status: err.response.status
+            }
+            dispatch({
+                type: GET_ERRORS,
+                payload: errors
+            });
+        });
 }
 
 // DELETE PRACTICE
@@ -27,7 +40,17 @@ export const deletePractice = (id) => (dispatch, getState) => {
                 payload: id
             });
         })
-        .catch(err => console.log(err));
+        // .catch(err => console.log(err));
+        .catch(err => {
+            const errors = {
+                msg: err.response.data,
+                status: err.response.status
+            }
+            dispatch({
+                type: GET_ERRORS,
+                payload: errors
+            });
+        });
 
 }
 

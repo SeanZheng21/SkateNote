@@ -9,7 +9,8 @@ class PracticeViewSet(viewsets.ModelViewSet):
     serializer_class = PracticeSerializer
 
     def get_queryset(self):
-        return self.request.user.practice.all()
+        print(dir(self.request.user.practice_set.all()))
+        return self.request.user.practice_set.all()
 
     def perform_create(self, serializer):
-        serializer.save(owner=self.request.user)
+        serializer.save(user=self.request.user)

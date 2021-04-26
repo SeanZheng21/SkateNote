@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getPractice, deletePractice } from '../../actions/practice';
 import { getTrick } from '../../actions/trick';
+import { Link } from 'react-router-dom';
 
 export class Practice extends Component {
     static propTypes = {
@@ -27,6 +28,14 @@ export class Practice extends Component {
         return (
             <Fragment>
                 <h2>Practices</h2>
+                <div style={{ float: "right" }}>
+                    <button type="button" className="btn btn-link border-primary">
+                        <Link to="/practice_add/">
+                            <strong> Add New Practice </strong>
+                        </Link>
+                    </button>
+                </div>
+                <br />
                 <table className="table table-striped">
                     <thead>
                         <tr>

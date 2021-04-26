@@ -5,7 +5,7 @@ import Practice from './Practice';
 export default function Dashboard() {
     return (
         <Fragment>
-            <Form />
+            {/* <Form /> */}
             <Practice />
         </Fragment>
     )

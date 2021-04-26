@@ -7,6 +7,7 @@ import PrivateRoute from "./common/PrivateRoute";
 import Home from "./home/Home";
 import Trick from "./trick/Trick";
 import TrickDetail from "./trick/TrickDetail";
+import Form from './practice/Form';
 
 import { Provider as AlertProvider } from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic';
@@ -45,6 +46,7 @@ class App extends Component {
                                     <Route exact path="/trick" component={Trick} />
                                     <Route exact path="/trick/:trick_id" component={TrickDetail} />
                                     <PrivateRoute exact path="/practice" component={Dashboard} />
+                                    <PrivateRoute exact path="/practice_add" component={Form} />
                                     <Route exact path="/register" component={Register} />
                                     <Route exact path="/login" component={Login} />
                                 </Switch>

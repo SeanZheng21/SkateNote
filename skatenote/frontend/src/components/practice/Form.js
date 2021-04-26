@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { addPractice } from '../../actions/practice';
 import { getTrick } from '../../actions/trick';
+import { Link } from 'react-router-dom';
 
 export class Form extends Component {
     state = {
@@ -40,12 +41,13 @@ export class Form extends Component {
             trick: selectedTrick,
             isCompleted: isCompleted
         }
-        console.log(practice);
+        // console.log(practice);
         this.props.addPractice(practice);
         this.setState({
             isCompleted: false,
             selectedTrick: 0
         });
+        this.props.history.push('/practice');
     }
 
     trickName(trickID) {
@@ -58,7 +60,18 @@ export class Form extends Component {
         const { isCompleted, selectedTrick } = this.state;
         return (
             <div className="card card-body mt-4 mb-4">
-                <h1>Add Practice</h1>
+                <span>
+                    <h1 style={{ float: "left" }}>Add Practice</h1>
+                    <div style={{ float: "right" }}>
+                        <p>&nbsp;</p>
+                        <button type="button" className="btn btn-link border-primary">
+                            <Link to="/practice/">
+                                <strong> All My Practices </strong>
+                            </Link>
+                        </button>
+                    </div>
+
+                </span>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group" style={{ width: "fit-content" }}>
                         <label>Trick {this.trickName(this.state.selectedTrick)}</label><br />

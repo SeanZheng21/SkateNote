@@ -2,43 +2,83 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { addPractice } from '../../actions/practice';
+import { getTrick } from '../../actions/trick';
 
 export class Form extends Component {
     state = {
-        isCompleted: false
+        isCompleted: false,
+        selectedTrick: 0
     }
 
     static propTypes = {
-        addPractice: PropTypes.func.isRequired
+        addPractice: PropTypes.func.isRequired,
+        trick: PropTypes.array.isRequired,
+        getTrick: PropTypes.func.isRequired
     }
 
-    onChange = e => {
-        // this.setState({ [e.target.name]: e.target.value });
-        this.setState({ [e.target.name]: e.target.checked });
+    componentDidMount() {
+        this.props.getTrick();
+    }
+
+    onCheckboxChange = e => {
+        this.setState({
+            [e.target.name]: e.target.checked
+        });
+    }
+
+    handleChange = e => {
+        this.setState({
+            [e.target.name]: e.target.value
+        });
     }
 
     onSubmit = e => {
         e.preventDefault();
-        const { isCompleted } = this.state;
-        const practice = { isCompleted }
+        if (this.state.selectedTrick === 0) { return; }
+        const { selectedTrick, isCompleted } = this.state;
+        const practice = {
+            trick: selectedTrick,
+            isCompleted: isCompleted
+        }
+        console.log(practice);
         this.props.addPractice(practice);
         this.setState({
-            isCompleted: false
+            isCompleted: false,
+            selectedTrick: 0
         });
     }
 
+    trickName(trickID) {
+        if (trickID === 0 || !this.props.trick[trickID - 1]) { return ""; }
+        // console.log(this.props.trick[trickID - 1].name);
+        return this.props.trick[trickID - 1].name;
+    }
+
     render() {
-        const { isCompleted } = this.state;
+        const { isCompleted, selectedTrick } = this.state;
         return (
             <div className="card card-body mt-4 mb-4">
                 <h1>Add Practice</h1>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group" style={{ width: "fit-content" }}>
+                        <label>Trick {this.trickName(this.state.selectedTrick)}</label><br />
+
+                        <select className="form-control"
+                            name="selectedTrick"
+                            onChange={this.handleChange}
+                            value={this.state.selectedTrick}>
+                            {this.props.trick.map(t => {
+                                return <option key={t.id} value={t.id}>{this.trickName(t.id)}</option>
+                            })}
+                        </select>
+                    </div>
+
+                    <div className="form-group" style={{ width: "fit-content" }}>
                         <label>Is Completed: </label>
                         <input className="form-control"
                             type="checkbox"
                             name="isCompleted"
-                            onChange={this.onChange}
+                            onChange={this.onCheckboxChange}
                             checked={isCompleted}
                             style={{
                                 float: "right",
@@ -46,7 +86,6 @@ export class Form extends Component {
                                 height: "15px",
                                 marginLeft: "10px"
                             }} />
-
                     </div>
                     <div className="form-group">
                         <button type="submit" className="btn btn-primary">
@@ -59,4 +98,8 @@ export class Form extends Component {
     }
 }
 
-export default connect(null, { addPractice })(Form);
+const mapStateToProps = state => ({
+    trick: state.trick.trick
+});
+
+export default connect(mapStateToProps, { getTrick, addPractice })(Form);

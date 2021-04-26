@@ -2,16 +2,25 @@ import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import { getPractice, deletePractice } from '../../actions/practice';
+import { getTrick } from '../../actions/trick';
 
 export class Practice extends Component {
     static propTypes = {
         practice: PropTypes.array.isRequired,
         getPractice: PropTypes.func.isRequired,
-        deletePractice: PropTypes.func.isRequired
+        deletePractice: PropTypes.func.isRequired,
+        getTrick: PropTypes.func.isRequired
     };
 
     componentDidMount() {
+        this.props.getTrick();
         this.props.getPractice();
+    }
+
+    trickName(trickID) {
+        if (trickID === 0 || !this.props.trick[trickID - 1]) { return ""; }
+        // console.log(this.props);
+        return this.props.trick[trickID - 1].name;
     }
 
     render() {
@@ -23,6 +32,7 @@ export class Practice extends Component {
                         <tr>
                             <th>#</th>
                             <th>Completed</th>
+                            <th>Trick</th>
                             <th />
                         </tr>
                     </thead>
@@ -30,7 +40,8 @@ export class Practice extends Component {
                         {this.props.practice.map(p => (
                             <tr key={p.id}>
                                 <td>{p.id}</td>
-                                <td>{p.isCompleted ? "True" : "false"}</td>
+                                <td>{p.isCompleted ? "True" : "False"}</td>
+                                <td>{this.trickName(p.trick)}</td>
                                 <td>
                                     <button onClick={this.props.deletePractice.bind(this, p.id)} className="btn btn-danger btn-sm">Delete</button>
                                 </td>
@@ -44,10 +55,11 @@ export class Practice extends Component {
 }
 
 const mapStateToProps = state => ({
-    practice: state.practice.practice
+    practice: state.practice.practice,
+    trick: state.trick.trick
 });
 
 export default connect(
     mapStateToProps,
-    { getPractice, deletePractice }
+    { getTrick, getPractice, deletePractice }
 )(Practice);

@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     "practice",
     "knox",
     "accounts",
+    "session",
 ]
 
 REST_FRAMEWORK = {"DEFAULT_AUTHENTICATION_CLASSES": ("knox.auth.TokenAuthentication",)}

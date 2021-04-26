@@ -22,4 +22,5 @@ urlpatterns = [
     path("", include("trick.urls")),
     path("", include("practice.urls")),
     path("", include("accounts.urls")),
+    path("", include("session.urls")),
 ]

@@ -1,32 +1,26 @@
 import React, { Component, Fragment } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { getSession, deleteSession } from '../../actions/session';
+import { getSessionOfPractice, deleteSession } from '../../actions/session';
 import { Link } from 'react-router-dom';
 
-export class Session extends Component {
+export class SessionOfPractice extends Component {
     static propTypes = {
         session: PropTypes.array.isRequired,
-        getSession: PropTypes.func.isRequired,
-        deleteSession: PropTypes.func.isRequired,
+        getSessionOfPractice: PropTypes.func.isRequired,
+        deleteSession: PropTypes.func.isRequired
     };
 
     componentDidMount() {
-        this.props.getSession();
+        let id = this.props.match.params.practice_id;
+        id = parseInt(id, 10);
+        this.props.getSessionOfPractice(id);
     }
 
     render() {
         return (
             <Fragment>
-                <h2>All My Sessions</h2>
-                {/* <div style={{ float: "right" }}>
-                    <button type="button" className="btn btn-link border-primary">
-                        <Link to="/session_add/">
-                            <strong> Add New Session </strong>
-                        </Link>
-                    </button>
-                </div> 
-                <br /> */}
+                <h2>Sessions of Practice</h2>
                 <table className="table table-striped">
                     <thead>
                         <tr>
@@ -57,6 +51,19 @@ export class Session extends Component {
                         ))}
                     </tbody>
                 </table>
+                &nbsp;&nbsp;&nbsp;
+                <button type="button" className="btn btn-link border-primary">
+                    <Link to='/session'>
+                        <strong> All Sessions </strong>
+                    </Link>
+                </button>
+                &nbsp;&nbsp;&nbsp;
+                <button type="button" className="btn btn-link border-primary">
+                    <Link to='/practice'>
+                        <strong> All Practices </strong>
+                    </Link>
+                </button>
+
             </Fragment>
         )
     }
@@ -68,5 +75,5 @@ const mapStateToProps = state => ({
 
 export default connect(
     mapStateToProps,
-    { getSession, deleteSession }
-)(Session);
+    { getSessionOfPractice, deleteSession }
+)(SessionOfPractice);

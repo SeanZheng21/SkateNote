@@ -27,7 +27,7 @@ export class Practice extends Component {
     render() {
         return (
             <Fragment>
-                <h2>Practices</h2>
+                <h2>All My Practices</h2>
                 <div style={{ float: "right" }}>
                     <button type="button" className="btn btn-link border-primary">
                         <Link to="/practice_add/">
@@ -40,8 +40,8 @@ export class Practice extends Component {
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Completed</th>
                             <th>Trick</th>
+                            <th>Completed</th>
                             <th />
                         </tr>
                     </thead>
@@ -49,14 +49,20 @@ export class Practice extends Component {
                         {this.props.practice.map(p => (
                             <tr key={p.id}>
                                 <td>{p.id}</td>
-                                <td>{p.isCompleted ? "True" : "False"}</td>
                                 <td>{this.trickName(p.trick)}</td>
+                                <td>{p.isCompleted ? "Yes" : "No"}</td>
                                 <td>
                                     <button onClick={this.props.deletePractice.bind(this, p.id)} className="btn btn-danger btn-sm">Delete</button>
                                     &nbsp;&nbsp;
                                     <button type="button" className="btn btn-link btn-sm border-primary">
                                         <Link to={"/session_add/" + p.id}>
                                             <strong> Add A Session </strong>
+                                        </Link>
+                                    </button>
+                                    &nbsp;&nbsp;
+                                    <button type="button" className="btn btn-link btn-sm border-primary">
+                                        <Link to={"/session_of_practice/" + p.id}>
+                                            <strong> Sessions </strong>
                                         </Link>
                                     </button>
                                 </td>

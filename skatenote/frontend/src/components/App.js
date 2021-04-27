@@ -11,6 +11,7 @@ import Form from './practice/Form';
 import Session from './session/Session';
 import SessionDetail from './session/SessionDetail';
 import SessionForm from './session/SessionForm';
+import SessionOfPractice from './session/SessionOfPractice';
 
 import { Provider as AlertProvider } from 'react-alert';
 import AlertTemplate from 'react-alert-template-basic';
@@ -53,6 +54,7 @@ class App extends Component {
                                     <PrivateRoute exact path="/session" component={Session} />
                                     <PrivateRoute exact path="/session/:session_id" component={SessionDetail} />
                                     <PrivateRoute exact path="/session_add/:practice_id" component={SessionForm} />
+                                    <PrivateRoute exact path="/session_of_practice/:practice_id" component={SessionOfPractice} />
                                     <Route exact path="/register" component={Register} />
                                     <Route exact path="/login" component={Login} />
                                 </Switch>

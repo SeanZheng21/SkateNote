@@ -1,4 +1,4 @@
-import { GET_SESSION, DELETE_SESSION, ADD_SESSION } from '../actions/types.js';
+import { GET_SESSION, DELETE_SESSION, ADD_SESSION, GET_SESSION_OF_PRACTICE } from '../actions/types.js';
 
 const initialState = {
     session: []
@@ -7,6 +7,7 @@ const initialState = {
 export default function (state = initialState, action) {
     switch (action.type) {
         case GET_SESSION:
+        case GET_SESSION_OF_PRACTICE:
             return {
                 ...state,
                 session: action.payload

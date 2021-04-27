@@ -53,6 +53,12 @@ export class Practice extends Component {
                                 <td>{this.trickName(p.trick)}</td>
                                 <td>
                                     <button onClick={this.props.deletePractice.bind(this, p.id)} className="btn btn-danger btn-sm">Delete</button>
+                                    &nbsp;&nbsp;
+                                    <button type="button" className="btn btn-link btn-sm border-primary">
+                                        <Link to={"/session_add/" + p.id}>
+                                            <strong> Add A Session </strong>
+                                        </Link>
+                                    </button>
                                 </td>
                             </tr>
                         ))}

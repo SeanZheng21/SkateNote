@@ -44,6 +44,12 @@ export class Session extends Component {
                                 <td>{s.duration}</td>
                                 <td>
                                     <button onClick={this.props.deleteSession.bind(this, s.id)} className="btn btn-danger btn-sm">Delete</button>
+                                    &nbsp; &nbsp;
+                                    <button type="button" className="btn btn-link btn-sm border-primary">
+                                        <Link to={'/session/' + s.id}>
+                                            <strong> Session Details </strong>
+                                        </Link>
+                                    </button>
                                 </td>
                             </tr>
                         ))}

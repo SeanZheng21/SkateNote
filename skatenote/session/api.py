@@ -4,9 +4,7 @@ from .serializers import SessionSerializer
 
 # Session viewset
 class SessionViewSet(viewsets.ModelViewSet):
-    # queryset = Session.objects.all()
-    # permission_classes = [permissions.IsAuthenticated]
-    permission_classes = [permissions.AllowAny]
+    permission_classes = [permissions.IsAuthenticated]
     serializer_class = SessionSerializer
 
     def get_queryset(self):
@@ -16,3 +14,13 @@ class SessionViewSet(viewsets.ModelViewSet):
 
     # def perform_create(self, serializer):
     #     serializer.save(user=self.request.user)
+
+
+# Session of practice viewset
+class SessionOfPracticeViewSet(viewsets.ModelViewSet):
+    permission_classes = [permissions.IsAuthenticated]
+    serializer_class = SessionSerializer
+
+    def get_queryset(self):
+        pid = self.request.query_params.get("pid")
+        return Session.objects.filter(practice=pid)

@@ -10,14 +10,9 @@ class SessionViewSet(viewsets.ModelViewSet):
     serializer_class = SessionSerializer
 
     def get_queryset(self):
-        # print(dir(Session.objects.all()))
-
         all_practice = self.request.user.practice_set.all()
         all_practice_ids = [elt.id for elt in all_practice]
-        # print(all_practice_ids)
-        result = Session.objects.filter(practice__in=all_practice_ids)
-        print(result)
-        return result
+        return Session.objects.filter(practice__in=all_practice_ids)
 
     # def perform_create(self, serializer):
     #     serializer.save(user=self.request.user)

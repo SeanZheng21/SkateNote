@@ -14,3 +14,7 @@ export const LOGIN_FAIL = "LOGIN_FAIL";
 export const LOGOUT_SUCCESS = "LOGOUT_SUCCESS";
 export const REGISTER_SUCCESS = "REGISTER_SUCCESS";
 export const REGISTER_FAIL = "REGISTER_FAIL";
+
+export const GET_SESSION = "GET_SESSION";
+export const DELETE_SESSION = "DELETE_SESSION";
+export const ADD_SESSION = "ADD_SESSION";

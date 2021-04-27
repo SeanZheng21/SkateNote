@@ -19,6 +19,13 @@ export default function Home() {
                     <strong> My Practices </strong>
                 </Link>
             </button>
+            <br />
+            <br />
+            <button type="button" className="btn btn-link border-primary">
+                <Link to="/session/">
+                    <strong> My Sessions </strong>
+                </Link>
+            </button>
         </div>
     )
 }

@@ -17,7 +17,7 @@ export class Header extends Component {
             <ul className="navbar-nav mr-auto mt-2 mt-lg-0">
                 <span className="navbar-text mr-3">
                     <strong>
-                        {user ? `Welcome ${user.username}` : ""}
+                        {user ? `Welcome skater, ${user.username}` : ""}
                     </strong>
                 </span>
                 <li className="nav-item">
@@ -47,6 +47,9 @@ export class Header extends Component {
                 </li>
                 <li className="nav-item">
                     <Link to="/practice" className="nav-link">My Practices</Link>
+                </li>
+                <li className="nav-item">
+                    <Link to="/session" className="nav-link">My Sessions</Link>
                 </li>
             </ul>
         );

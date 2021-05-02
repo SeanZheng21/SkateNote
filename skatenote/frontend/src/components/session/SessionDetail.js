@@ -15,14 +15,6 @@ export class SessionDetail extends Component {
 
     componentDidMount() {
         this.props.getSession();
-
-        // axios.get(`/api/session/${id}/`, tokenConfig(() => this.state))
-        //     .then(res => {
-        //         this.setState({
-        //             ...this.state,
-        //             session: res.data
-        //         });
-        //     })
     }
 
     oneSession() {

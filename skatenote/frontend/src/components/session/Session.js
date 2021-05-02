@@ -40,7 +40,7 @@ export class Session extends Component {
 
         const practice_found = this.props.practice.find(elt => elt.id === practice_id)
         // console.log(practice_found);
-        return `My ${this.trickName(practice_found.trick)} sessions: total`;
+        return `My ${this.trickName(practice_found.trick)} sessions: total ${this.sessionsOfPractice(practice_id).length}`;
     }
 
     trickName(trickID) {

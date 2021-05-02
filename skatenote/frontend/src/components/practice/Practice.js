@@ -65,6 +65,12 @@ export class Practice extends Component {
                                             <strong> Sessions </strong>
                                         </Link>
                                     </button>
+                                    &nbsp;&nbsp;
+                                    <button type="button" className="btn btn-link btn-sm border-primary">
+                                        <Link to={"/practice_update/" + p.id}>
+                                            <strong> Edit </strong>
+                                        </Link>
+                                    </button>
                                 </td>
                             </tr>
                         ))}

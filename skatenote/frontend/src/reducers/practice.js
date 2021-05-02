@@ -1,4 +1,4 @@
-import { GET_PRACTICE, DELETE_PRACTICE, ADD_PRACTICE } from '../actions/types.js';
+import { GET_PRACTICE, DELETE_PRACTICE, ADD_PRACTICE, EDIT_PRACTICE } from '../actions/types.js';
 
 const initialState = {
     practice: []
@@ -20,6 +20,11 @@ export default function (state = initialState, action) {
             return {
                 ...state,
                 practice: [...state.practice, action.payload]
+            }
+        case EDIT_PRACTICE:
+            return {
+                ...state,
+                practice: [...state.practice]
             }
         default:
             return state;

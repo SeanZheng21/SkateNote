@@ -37,7 +37,7 @@ export class SessionOfPractice extends Component {
                                 <td>{s.id}</td>
                                 <td>{s.date}</td>
                                 <td>{s.summary}</td>
-                                <td>{s.duration}</td>
+                                <td>{s.duration} min</td>
                                 <td>
                                     <button onClick={this.props.deleteSession.bind(this, s.id)} className="btn btn-danger btn-sm">Delete</button>
                                     &nbsp; &nbsp;

@@ -7,7 +7,7 @@ import PrivateRoute from "./common/PrivateRoute";
 import Home from "./home/Home";
 import Trick from "./trick/Trick";
 import TrickDetail from "./trick/TrickDetail";
-import Form from './practice/Form';
+import PracticeForm from './practice/PracticeForm';
 import Session from './session/Session';
 import SessionDetail from './session/SessionDetail';
 import SessionForm from './session/SessionForm';
@@ -50,7 +50,7 @@ class App extends Component {
                                     <Route exact path="/trick" component={Trick} />
                                     <Route exact path="/trick/:trick_id" component={TrickDetail} />
                                     <PrivateRoute exact path="/practice" component={Dashboard} />
-                                    <PrivateRoute exact path="/practice_add" component={Form} />
+                                    <PrivateRoute exact path="/practice_add" component={PracticeForm} />
                                     <PrivateRoute exact path="/session" component={Session} />
                                     <PrivateRoute exact path="/session/:session_id" component={SessionDetail} />
                                     <PrivateRoute exact path="/session_add/:practice_id" component={SessionForm} />

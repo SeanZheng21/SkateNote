@@ -5,7 +5,7 @@ import { addPractice } from '../../actions/practice';
 import { getTrick } from '../../actions/trick';
 import { Link } from 'react-router-dom';
 
-export class Form extends Component {
+export class PracticeForm extends Component {
     state = {
         isCompleted: false,
         selectedTrick: 0
@@ -115,4 +115,4 @@ const mapStateToProps = state => ({
     trick: state.trick.trick
 });
 
-export default connect(mapStateToProps, { getTrick, addPractice })(Form);
+export default connect(mapStateToProps, { getTrick, addPractice })(PracticeForm);

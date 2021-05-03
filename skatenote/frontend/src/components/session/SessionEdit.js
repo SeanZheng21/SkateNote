@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import { editSession } from '../../actions/session';
+import { editSession, getSession } from '../../actions/session';
 import { Link } from 'react-router-dom';
 
 export class SessionEdit extends Component {
@@ -15,6 +15,30 @@ export class SessionEdit extends Component {
 
     static propTypes = {
         editSession: PropTypes.func.isRequired,
+        getSession: PropTypes.func.isRequired,
+    }
+
+    componentDidMount() {
+        this.props.getSession();
+        this.initializeSessionState();
+    }
+
+    initializeSessionState = () => {
+        if (!this.props.session) {
+            console.log("Sessions are not ready");
+            return;
+        }
+        const sid = this.get_session_id();
+        const sesh = this.props.session.find(s => sid === s.id);
+        this.setState({
+            ...this.state,
+            duration: sesh.duration,
+            date: sesh.date,
+            summary: sesh.summary,
+            note: sesh.note,
+            videolink: sesh.videolink
+        });
+        // console.log(this.state);
     }
 
     handleChange = e => {
@@ -23,8 +47,8 @@ export class SessionEdit extends Component {
         });
     }
 
-    get_practice_id() {
-        let id = this.props.match.params.practice_id;
+    get_session_id() {
+        let id = this.props.match.params.session_id;
         return parseInt(id, 10);
     }
 
@@ -64,7 +88,7 @@ export class SessionEdit extends Component {
                 </span>
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group" style={{ width: "fit-content" }}>
-                        <label>Total Time</label>
+                        <label>Total Time (min)</label>
                         <input className="form-control"
                             type="number"
                             name="duration"
@@ -89,7 +113,8 @@ export class SessionEdit extends Component {
                     </div>
                     <div className="form-group" style={{ width: "fit-content" }}>
                         <label>Note</label>
-                        <input className="form-control"
+                        <textarea className="form-control"
+                            rows="8" cols="100"
                             type="text"
                             name="note"
                             onChange={this.handleChange}
@@ -107,17 +132,21 @@ export class SessionEdit extends Component {
                         <button type="submit" className="btn btn-primary">
                             Submit
                         </button>
+                        &nbsp; &nbsp;
+                        <button type="button" className="btn btn-link border-primary">
+                            <Link to={'/session/'}>
+                                <strong> Cancel </strong>
+                            </Link>
+                        </button>
                     </div>
-                    &nbsp; &nbsp;
-                    <button type="button" className="btn btn-link btn-sm border-primary">
-                        <Link to={'/session/'}>
-                            <strong> Cancel </strong>
-                        </Link>
-                    </button>
                 </form>
             </div>
         )
     }
 }
 
-export default connect(null, { editSession })(SessionEdit);
+const mapStateToProps = state => ({
+    session: state.session.session,
+});
+
+export default connect(mapStateToProps, { getSession, editSession })(SessionEdit);

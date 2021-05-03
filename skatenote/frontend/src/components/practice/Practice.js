@@ -27,15 +27,15 @@ export class Practice extends Component {
     render() {
         return (
             <Fragment>
-                <h2>All My Practices</h2>
-                <div style={{ float: "right" }}>
-                    <button type="button" className="btn btn-link border-primary">
-                        <Link to="/practice_add/">
-                            <strong> Add New Practice </strong>
-                        </Link>
-                    </button>
-                </div>
-                <br />
+                <h2><strong>All My Practices</strong>
+                    <div style={{ float: "right" }}>
+                        <button type="button" className="btn btn-link border-primary">
+                            <Link to="/practice_add/">
+                                <strong> Add New Practice </strong>
+                            </Link>
+                        </button>
+                    </div>
+                </h2>
                 <table className="table table-striped">
                     <thead>
                         <tr>

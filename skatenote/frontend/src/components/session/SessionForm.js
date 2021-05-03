@@ -67,7 +67,7 @@ export class SessionForm extends Component {
                     </div>
 
                 </span>
-                <p>To {this.get_practice_id()}</p>
+                {/* <p>To {this.get_practice_id()}</p> */}
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group" style={{ width: "fit-content" }}>
                         <label>Total Time</label>
@@ -95,7 +95,8 @@ export class SessionForm extends Component {
                     </div>
                     <div className="form-group" style={{ width: "fit-content" }}>
                         <label>Note</label>
-                        <input className="form-control"
+                        <textarea className="form-control"
+                            rows="8" cols="100"
                             type="text"
                             name="note"
                             onChange={this.handleChange}

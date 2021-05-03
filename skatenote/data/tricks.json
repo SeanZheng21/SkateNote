@@ -1,0 +1,1411 @@
+[
+    {
+        "model": "trick.trick",
+        "pk": 1,
+        "fields": {
+            "name": "Backside 180",
+            "difficulty": 1,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "A beginner flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 2,
+        "fields": {
+            "name": "Caveman",
+            "difficulty": 1,
+            "stances": 2,
+            "description": "Regular Switch",
+            "guide": "A beginner flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 3,
+        "fields": {
+            "name": "Drop in ramp",
+            "difficulty": 1,
+            "stances": 2,
+            "description": "Regular Switch",
+            "guide": "A beginner ramp trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 4,
+        "fields": {
+            "name": "Frontside 180",
+            "difficulty": 1,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "A beginner flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 5,
+        "fields": {
+            "name": "Frontside pop shovit",
+            "difficulty": 1,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "A beginner flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 6,
+        "fields": {
+            "name": "Heelflip",
+            "difficulty": 1,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "A beginner flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 7,
+        "fields": {
+            "name": "Kickflip",
+            "difficulty": 1,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "A beginner flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 8,
+        "fields": {
+            "name": "Nose stall",
+            "difficulty": 1,
+            "stances": 2,
+            "description": "Regular Switch",
+            "guide": "A beginner flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 9,
+        "fields": {
+            "name": "Nose stall ramp",
+            "difficulty": 1,
+            "stances": 2,
+            "description": "Regular",
+            "guide": "A beginner ramp trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 10,
+        "fields": {
+            "name": "Ollie",
+            "difficulty": 1,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "A beginner flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 11,
+        "fields": {
+            "name": "Pop shovit",
+            "difficulty": 1,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "A beginner flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 12,
+        "fields": {
+            "name": "Pushing",
+            "difficulty": 1,
+            "stances": 2,
+            "description": "Regular Switch",
+            "guide": "A beginner flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 13,
+        "fields": {
+            "name": "Rock and roll ramp",
+            "difficulty": 1,
+            "stances": 2,
+            "description": "Regular Switch",
+            "guide": "A beginner ramp trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 14,
+        "fields": {
+            "name": "Rock to fakie ramp",
+            "difficulty": 1,
+            "stances": 2,
+            "description": "Regular Switch",
+            "guide": "A beginner ramp trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 15,
+        "fields": {
+            "name": "Shovit",
+            "difficulty": 1,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "A beginner flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 16,
+        "fields": {
+            "name": "Boneless",
+            "difficulty": 1,
+            "stances": 2,
+            "description": "Regular Switch",
+            "guide": "A beginner flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 17,
+        "fields": {
+            "name": "Tail stall ramp",
+            "difficulty": 1,
+            "stances": 2,
+            "description": "Regular",
+            "guide": "A beginner ramp trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 18,
+        "fields": {
+            "name": "360 pop shovit",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 19,
+        "fields": {
+            "name": "Back disaster",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate ramp trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 20,
+        "fields": {
+            "name": "Backside 5-0 grind",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate grind trick"
+        }
+    },
+
+    {
+		"model": "trick.trick",
+        "pk": 21,
+        "fields": {
+            "name": "Backside 50-50 grind",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate grind trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 22,
+        "fields": {
+            "name": "Backside air",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate ramp trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 23,
+        "fields": {
+            "name": "Backside air",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate ramp trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 24,
+        "fields": {
+            "name": "Backside blunt",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate ramp trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 25,
+        "fields": {
+            "name": "Backside board slide",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate grind trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 26,
+        "fields": {
+            "name": "Backside feeble grind",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate grind trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 27,
+        "fields": {
+            "name": "Backside crooked grind",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate grind trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 28,
+        "fields": {
+            "name": "Backside nose grind",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate grind trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 29,
+        "fields": {
+            "name": "Backside nose slide",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate grind trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 30,
+        "fields": {
+            "name": "Backside smith grind",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate grind trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 31,
+        "fields": {
+            "name": "Backside tail slide",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate grind trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 32,
+        "fields": {
+            "name": "Blunt to fakie",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate ramp trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 33,
+        "fields": {
+            "name": "Boneless frontside 180",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 34,
+        "fields": {
+            "name": "Casper flip",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 35,
+        "fields": {
+            "name": "Double heelflip",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 36,
+        "fields": {
+            "name": "Double kickflip",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 37,
+        "fields": {
+            "name": "Front disaster",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate ramp trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 38,
+        "fields": {
+            "name": "Front shovit reveret",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 39,
+        "fields": {
+            "name": "Frontside blunt slide",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate grind trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 40,
+        "fields": {
+            "name": "Frontside 360 ollie",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 41,
+        "fields": {
+            "name": "Frontside 5-0 grind",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate grind trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 42,
+        "fields": {
+            "name": "Frontside 50-50 grind",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate grind trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 43,
+        "fields": {
+            "name": "Frontside air",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate ramp trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 44,
+        "fields": {
+            "name": "Frontside board slide",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate grind trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 45,
+        "fields": {
+            "name": "Frontside crooked grind",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate grind trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 46,
+        "fields": {
+            "name": "Frontside feeble grind",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate grind trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 47,
+        "fields": {
+            "name": "Frontside nose blunt",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate grind trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 48,
+        "fields": {
+            "name": "Frontside nose grind",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate grind trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 49,
+        "fields": {
+            "name": "Frontside nose slide",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate grind trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 50,
+        "fields": {
+            "name": "Frontside tail slide",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate grind trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 51,
+        "fields": {
+            "name": "Frontside Willie grind",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate grind trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 52,
+        "fields": {
+            "name": "Hardflip",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 53,
+        "fields": {
+            "name": "Heelflip backside body varial",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 54,
+        "fields": {
+            "name": "Heelflip frontside body varial",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 55,
+        "fields": {
+            "name": "Hospital flip",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 56,
+        "fields": {
+            "name": "Indy grab",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 57,
+        "fields": {
+            "name": "Inward heelflip",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 58,
+        "fields": {
+            "name": "Kickflip backside body varial",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 59,
+        "fields": {
+            "name": "Kickflip frontside body varial",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 60,
+        "fields": {
+            "name": "Manual",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 61,
+        "fields": {
+            "name": "Melon grab",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 62,
+        "fields": {
+            "name": "Method grab",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 63,
+        "fields": {
+            "name": "Mute grab",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 64,
+        "fields": {
+            "name": "No comply backside 180",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 65,
+        "fields": {
+            "name": "No comply frontside 180",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 66,
+        "fields": {
+            "name": "No comply pop shovit",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 67,
+        "fields": {
+            "name": "Nose grab",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 68,
+        "fields": {
+            "name": "Nose manual",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 69,
+        "fields": {
+            "name": "Ollie backside body varial",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 70,
+        "fields": {
+            "name": "Ollie frontside body varial",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 71,
+        "fields": {
+            "name": "Ollie impossible",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 72,
+        "fields": {
+            "name": "Ollie manual",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 73,
+        "fields": {
+            "name": "Ollie north",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 74,
+        "fields": {
+            "name": "Ollie nose manual",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 75,
+        "fields": {
+            "name": "Pop shovit manual",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 76,
+        "fields": {
+            "name": "Pop shovit body varial",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 77,
+        "fields": {
+            "name": "Pop shovit revert",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 78,
+        "fields": {
+            "name": "Pressure flip",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 79,
+        "fields": {
+            "name": "Tail grab",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 80,
+        "fields": {
+            "name": "Truck stand",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 81,
+        "fields": {
+            "name": "Varial kickflip",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 82,
+        "fields": {
+            "name": "Varial heelflip",
+            "difficulty": 2,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An intermediate flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 83,
+        "fields": {
+            "name": "360 flip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 84,
+        "fields": {
+            "name": "360 hardflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 85,
+        "fields": {
+            "name": "360 inward heelflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 86,
+        "fields": {
+            "name": "Backside 180 heelflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 87,
+        "fields": {
+            "name": "Backside 180 kickflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 88,
+        "fields": {
+            "name": "Backside bigspin",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 89,
+        "fields": {
+            "name": "Backside 540",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced ramp trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 90,
+        "fields": {
+            "name": "Frontside 180 heelflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 91,
+        "fields": {
+            "name": "Frontside 180 kickflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 92,
+        "fields": {
+            "name": "Frontside 360",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced ramp trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 93,
+        "fields": {
+            "name": "Frontside 360 pop shovit",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 94,
+        "fields": {
+            "name": "Frontside 540",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced ramp trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 95,
+        "fields": {
+            "name": "Frontside bigspin",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 96,
+        "fields": {
+            "name": "Hard double flip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 97,
+        "fields": {
+            "name": "Hardflip revert",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 98,
+        "fields": {
+            "name": "Inward heelflip revert",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 99,
+        "fields": {
+            "name": "Laser flip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 100,
+        "fields": {
+            "name": "Monster flip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 101,
+        "fields": {
+            "name": "Strawberry milk shake",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 102,
+        "fields": {
+            "name": "Triple heelflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 103,
+        "fields": {
+            "name": "Triple kickflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 104,
+        "fields": {
+            "name": "Varial double heelflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 105,
+        "fields": {
+            "name": "Varial double kickflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 106,
+        "fields": {
+            "name": "Varial heelflip revert",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 107,
+        "fields": {
+            "name": "Varial kickflip revert",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 108,
+        "fields": {
+            "name": "360 double flip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 109,
+        "fields": {
+            "name": "360 flip revert",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 110,
+        "fields": {
+            "name": "Alpha flip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 111,
+        "fields": {
+            "name": "Backside 360 ollie",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 112,
+        "fields": {
+            "name": "Backside 720",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced ramp trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 113,
+        "fields": {
+            "name": "Backside bigspin heelflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 114,
+        "fields": {
+            "name": "Backside bigspin kickflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 115,
+        "fields": {
+            "name": "Frontside 720",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced ramp trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 116,
+        "fields": {
+            "name": "Frontside bigspin heelflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 117,
+        "fields": {
+            "name": "Frontside bigspin kickflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 118,
+        "fields": {
+            "name": "Inward 360 double heelflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 119,
+        "fields": {
+            "name": "Laser flip revert",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 120,
+        "fields": {
+            "name": "360 triple flip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 121,
+        "fields": {
+            "name": "Backside 360 heelflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 122,
+        "fields": {
+            "name": "Backside 360 kickflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 123,
+        "fields": {
+            "name": "Backside 900",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced ramp trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 124,
+        "fields": {
+            "name": "Frontside 360 heelflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 125,
+        "fields": {
+            "name": "Frontside 360 kickflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 126,
+        "fields": {
+            "name": "Frontside 900",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced ramp trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 127,
+        "fields": {
+            "name": "Gazelle heelflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    },
+    {
+		"model": "trick.trick",
+        "pk": 128,
+        "fields": {
+            "name": "Gazelle kickflip",
+            "difficulty": 3,
+            "stances": 2,
+            "description": "Regular Switch Fakie Nollie",
+            "guide": "An advanced flatground trick"
+        }
+    }
+]

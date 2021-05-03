@@ -34,7 +34,7 @@ export class Trick extends Component {
                             <th>#</th>
                             <th>Name</th>
                             <th>Difficulty</th>
-                            <th>Description</th>
+                            <th>Stances</th>
                             <th />
                         </tr>
                     </thead>

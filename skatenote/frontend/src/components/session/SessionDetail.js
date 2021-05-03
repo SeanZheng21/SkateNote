@@ -17,6 +17,13 @@ export class SessionDetail extends Component {
         this.props.getSession();
     }
 
+    sessionId() {
+        if (!this.props.session) return -1;
+
+        let id = this.props.match.params.session_id;
+        return parseInt(id, 10);
+    }
+
     oneSession() {
         if (!this.props.session) return null;
 
@@ -49,6 +56,12 @@ export class SessionDetail extends Component {
                 <button onClick={
                     this.props.deleteSession.bind(this, this.oneSession() ? this.oneSession().id : 0)
                 } className="btn btn-danger btn-sm">Delete</button>
+                &nbsp; &nbsp;
+                <button type="button" className="btn btn-link btn-sm border-primary">
+                    <Link to={`/session_edit/${this.sessionId()}/`}>
+                        <strong> Edit </strong>
+                    </Link>
+                </button>
             </div>
         )
     }

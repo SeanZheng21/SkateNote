@@ -4,7 +4,8 @@ import { createMessage } from './messages';
 import {
     GET_SESSION, DELETE_SESSION, ADD_SESSION,
     GET_ERRORS,
-    GET_SESSION_OF_PRACTICE
+    GET_SESSION_OF_PRACTICE,
+    EDIT_SESSION
 } from './types';
 import { tokenConfig } from './auth';
 
@@ -85,6 +86,29 @@ export const getSessionOfPractice = (id) => (dispatch, getState) => {
         .then(res => {
             dispatch({
                 type: GET_SESSION_OF_PRACTICE,
+                payload: res.data
+            });
+        })
+        // .catch(err => console.log(err));
+        .catch(err => {
+            const errors = {
+                msg: err.response.data,
+                status: err.response.status
+            }
+            dispatch({
+                type: GET_ERRORS,
+                payload: errors
+            });
+        });
+}
+
+// EDIT SESSION
+export const editSession = (id, session) => (dispatch, getState) => {
+    axios.put(`/api/session/${id}/`, session, tokenConfig(getState))
+        .then(res => {
+            dispatch(createMessage({ editSession: "Session updated" }));
+            dispatch({
+                type: EDIT_SESSION,
                 payload: res.data
             });
         })

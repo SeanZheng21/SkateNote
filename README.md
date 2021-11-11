@@ -1,6 +1,18 @@
 # SkateNote
 Skaters' notebook to track skate trick progressions.
 
+Frontend: React
+
+Backend: Django
+
+1. Your can find your next skate trick to learn from our skate trick library. 
+
+2. Once you have decided on a trick to practice you can add it to your "Practice" list. You can practice as many tricks as you like at the same time. 
+
+3. After you went out and had an awesome skate session, record your session by completing the info like: duration, summary, note... You can even enter a video link of your skate session!
+
+Have fun with this app, skaters! Go out and shread!
+
 
 
 ## Setup guide
@@ -48,3 +60,29 @@ django = "*"
 djangorestframework = "*"
 django-rest-knox = "*"
 ```
+
+## Screenshots
+
+### Home page
+![Home1](https://github.com/SeanZheng21/SkateNote/blob/master/Screenshots/Home.png)
+Authenticated home page
+![Home2](https://github.com/SeanZheng21/SkateNote/blob/master/Screenshots/Home_with_login.png)
+
+### User authentication
+![Login](https://github.com/SeanZheng21/SkateNote/blob/master/Screenshots/Login.png)
+![Register](https://github.com/SeanZheng21/SkateNote/blob/master/Screenshots/Register.png)
+
+
+### Trick Library
+![Tricks](https://github.com/SeanZheng21/SkateNote/blob/master/Screenshots/Trick_Lib.png)
+![Trick Detail](https://github.com/SeanZheng21/SkateNote/blob/master/Screenshots/Trick_detail.png)
+
+### Practice
+![Practice1](https://github.com/SeanZheng21/SkateNote/blob/master/Screenshots/Practice.png)
+![Practice2](https://github.com/SeanZheng21/SkateNote/blob/master/Screenshots/Practice_Add.png)
+![Practice3](https://github.com/SeanZheng21/SkateNote/blob/master/Screenshots/Practice_update.png)
+
+### Session
+![Session1](https://github.com/SeanZheng21/SkateNote/blob/master/Screenshots/Session_Add.png)
+![Session2](https://github.com/SeanZheng21/SkateNote/blob/master/Screenshots/Session_Edit.png)
+![Session3](https://github.com/SeanZheng21/SkateNote/blob/master/Screenshots/Session_detail.png)
